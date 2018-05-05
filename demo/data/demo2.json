@@ -1,0 +1,43 @@
+{
+  "status": 1,
+  "num":20,
+  "productTab":[
+    {
+      "image":"icon.png",
+      "name":"张三",
+      "numAll":2
+    },
+    {
+      "image":"icon2.png",
+      "name":"玛丽尔",
+      "numAll":5
+    },
+    {
+      "image":"icon3.png",
+      "name":"李四",
+      "numAll":7
+    },
+    {
+      "image":"icon3.png",
+      "name":"小白不白",
+      "numAll":2
+    },
+    {
+      "image":"icon.png",
+      "name":"张三",
+      "numAll":2
+    }
+  ],
+  "user":{
+    "name":"小黑苹果",
+    "age":"25岁",
+    "height":"162cm",
+    "weight":"62.0kg",
+    "money":20,
+    "star":5,
+    "num":8,
+    "lookAt":12,
+    "image":"userIcon.png"
+  },
+  "message":"succ"
+}

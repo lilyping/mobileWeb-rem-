@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="description" content="不超过150个字符"/>
+    <meta name="keywords" content=""/>
+    <meta content="caibaojian" name="author"/>
+    <title>demo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+</head>
+
+<body>
+<!-- 正文 -->
+<div class="demo_contain">
+    <header>
+        <ul class="topContent">
+            <li class="txt">￥内容管家</li>
+            <li class="pic"><img src="imgs/setIcon.png" /></li>
+        </ul>
+    </header>
+
+    <section id="swiper-container1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="imgs/banner.jpg" /></div>
+                <div class="swiper-slide"><img src="imgs/banner2.jpg" /></div>
+                <div class="swiper-slide"><img src="imgs/banner3.jpg" /></div>
+            </div>
+
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="btnArry">
+        <ul class="picList">
+            <li class="item"><a href="javascript:void(0);" class="pic"><img src="imgs/circle.png" /></a></li>
+            <li class="item"><a href="javascript:void(0);" class="pic2"><img src="imgs/circle2.png" /></a></li>
+            <li class="item"><a href="javascript:void(0);" class="pic3"><img src="imgs/circle3.png" /></a></li>
+            <li class="item"><a href="javascript:void(0);" class="pic4"><img src="imgs/circle4.png" /></a></li>
+            <li class="item"><a href="javascript:void(0);" class="pic5"><img src="imgs/circle5.png" /></a></li>
+            <li class="item"><a href="javascript:void(0);" class="pic6"><img src="imgs/circle6.png" /></a></li>
+            <li class="item"><a href="javascript:void(0);" class="pic7"><img src="imgs/circle7.png" /></a></li>
+            <li class="item"><a href="javascript:void(0);" class="pic8"><img src="imgs/circle8.png" /></a></li>
+            <li class="item"><a href="javascript:void(0);" class="pic9"><img src="imgs/circle9.png" /></a></li>
+        </ul>
+    </section>
+
+    <section class="fixEnd">
+        <ul  class="iconList">
+            <li class="item icon"><a href="javascript:void(0);"><img src="imgs/officeIcon.png" /></a></li>
+            <li class="item icon2"><a href="javascript:void(0);"><img src="imgs/icon2.png" /></a></li>
+            <li class="item icon3"><a href="javascript:void(0);"><img src="imgs/icon3.png" /></a></li>
+            <li class="item icon4"><a href="javascript:void(0);"><img src="imgs/icon4.png" /></a></li>
+            <li class="item icon5"><a href="javascript:void(0);"><img src="imgs/icon5.png" alt=""></a></li>
+        </ul>
+    </section>
+
+</div>
+
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/remDeal.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('#swiper-container1',{
+        effect : 'fade',
+        autoplay: 1000,
+        speed:300,
+        pagination : '.swiper-pagination'
+    })
+</script>
+</body>
+</html>

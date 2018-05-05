@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="description" content="不超过150个字符"/>
+    <meta name="keywords" content=""/>
+    <meta content="caibaojian" name="author"/>
+    <title>demo6</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <style>
+        body{
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+
+<body>
+<div class="demo7_contain">
+
+    <section id="swiper-container7">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imgs/demo7/banner.jpg" /></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="photoRow">
+
+        <div class="lef">
+            <div class="picTitle">
+                <img src="imgs/demo7/iconPic.jpg"  class="iconPic"/>
+                <div class="circle">
+                    <img src="imgs/demo7/icon.png" class="icon"/>
+                </div>
+            </div>
+            <p class="txt">新闻</p>
+            <p class="txt2">国内外实时热门新闻资讯</p>
+        </div>
+
+        <div class="right">
+            <div class="picTitle">
+                <img src="imgs/demo7/iconPic2.jpg" class="iconPic2"/>
+                <div class="circle">
+                    <img src="imgs/demo7/icon2.png" class="icon2">
+                </div>
+            </div>
+            <p class="txt">视频</p>
+            <p class="txt2">国产经典、好莱坞大片…</p>
+        </div>
+
+    </section>
+
+    <section class="photoRow">
+
+        <div class="lef">
+            <div class="picTitle">
+                <img src="imgs/demo7/iconPic3.jpg"  class="iconPic"/>
+                <div class="circle">
+                    <img src="imgs/demo7/icon3.png" class="icon"/>
+                </div>
+            </div>
+            <p class="txt">文学</p>
+            <p class="txt2">中外古今文学巨著、当代小说</p>
+        </div>
+
+        <div class="right">
+            <div class="picTitle">
+                <img src="imgs/demo7/iconPic4.jpg" class="iconPic2"/>
+                <div class="circle">
+                    <img src="imgs/demo7/icon4.png" class="icon2">
+                </div>
+            </div>
+            <p class="txt">活动</p>
+            <p class="txt2">站内活动、线下活动</p>
+        </div>
+
+    </section>
+
+    <section class="space"></section>
+
+    <footer class="demo7_footer">
+        <ul class="iconArry">
+            <li class="footIcon d7_btn"><a href="javascript:void(0);">
+                <img src="imgs/demo7/footIcon_col.png" class="footIcon"/>
+            </a></li>
+            <li class="footIcon2 d7_btn"><a href="javascript:void(0);">
+                <img src="imgs/demo7/footIcon2.png" class="footIcon"/>
+            </a></li>
+            <li class="footIcon3 d7_btn"><a href="javascript:void(0);">
+                <img src="imgs/demo7/footIcon3.png" class="footIcon"/>
+            </a></li>
+            <li class="footIcon4 d7_btn"><a href="javascript:void(0);">
+                <img src="imgs/demo7/footIcon4.png" class="footIcon"/>
+            </a></li>
+            <li class="footIcon5 d7_btn"><a href="javascript:void(0);">
+                <img src="imgs/demo7/footIcon5.png" class="footIcon"/>
+            </a></li>
+        </ul>
+    </footer>
+
+</div>
+
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/vue.2.3.0.js"></script>
+<script src="js/remDeal.js"></script>
+<!--<script src="js/demo2.js"></script>-->
+<script src="js/swiper.min.js"></script>
+<!--<script>-->
+    <!--var mySwiper = new Swiper('#swiper-container7',{-->
+        <!--effect : 'fade',-->
+        <!--autoplay: 1000,-->
+        <!--speed:300,-->
+        <!--pagination : '.swiper-pagination'-->
+    <!--})-->
+<!--</script>-->
+<script>
+    $(function () {
+        var arr=['./imgs/demo7/footIcon_col.png',
+            './imgs/demo7/footIcon2_col.png',
+            './imgs/demo7/footIcon3_col.png',
+            './imgs/demo7/footIcon4_col.png',
+            './imgs/demo7/footIcon5_col.png'];
+
+            var arr2=['./imgs/demo7/footIcon.png',
+            './imgs/demo7/footIcon2.png',
+            './imgs/demo7/footIcon3.png',
+            './imgs/demo7/footIcon4.png',
+            './imgs/demo7/footIcon5.png'];
+
+       $('.d7_btn').each(function (index) {
+          $(this).click(function () {
+         // for(var i=0;i<arr2.length;i++){
+         //         $('.demo7_footer .iconArry .d7_btn').find('.footIcon').attr('src',arr2[i]);
+         //    }        
+  
+              // $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(index).attr('src',arr[index]);
+            // $('.demo7_footer .iconArry .d7_btn a').css('color','red');
+              if(index==0){
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(1).attr('src',arr2[1]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(2).attr('src',arr2[2]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(3).attr('src',arr2[3]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(4).attr('src',arr2[4]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(index).attr('src',arr[index]);
+              }
+              if(index==1){
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(0).attr('src',arr2[0]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(2).attr('src',arr2[2]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(3).attr('src',arr2[3]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(4).attr('src',arr2[4]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(index).attr('src',arr[index]);
+              }
+               if(index==2){
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(0).attr('src',arr2[0]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(1).attr('src',arr2[1]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(3).attr('src',arr2[3]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(4).attr('src',arr2[4]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(index).attr('src',arr[index]);
+              }
+               if(index==3){
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(0).attr('src',arr2[0]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(2).attr('src',arr2[2]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(1).attr('src',arr2[1]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(4).attr('src',arr2[4]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(index).attr('src',arr[index]);
+              }
+                if(index==4){
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(0).attr('src',arr2[0]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(2).attr('src',arr2[2]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(3).attr('src',arr2[3]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(1).attr('src',arr2[1]);
+                $('.demo7_footer .iconArry .d7_btn').find('.footIcon').eq(index).attr('src',arr[index]);
+              }
+            
+          });
+       });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="description" content="不超过150个字符"/>
+    <meta name="keywords" content=""/>
+    <meta content="caibaojian" name="author"/>
+    <title>demo6</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <style>
+        body{
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+
+<body>
+<div class="demo6_contain">
+
+    <section id="swiper-container6">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imgs/demo6/banner.jpg" /></div>
+            <div class="swiper-slide"><img src="imgs/demo6/banner2.jpg" /></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </section>
+
+
+    <section class="navIcon">
+        <nav class="allIcon">
+            <ul class="iconList">
+                <li class="item indexIcon"><a href="javascript:void(0);">
+                    <img src="imgs/demo6/indexIcon.png" />
+                </a></li>
+                <li class="item indexIcon2"><a href="javascript:void(0);">
+                    <img src="imgs/demo6/indexIcon2.png" />
+                </a></li>
+                <li class="item indexIcon3"><a href="javascript:void(0);">
+                    <img src="imgs/demo6/indexIcon3.png" />
+                </a></li>
+                <li class="item indexIcon4"><a href="javascript:void(0);">
+                    <img src="imgs/demo6/indexIcon4.png" />
+                </a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="demo6_shop">
+         <aside class="lef">
+             <div class="row">
+                 <ul class="timeOut">
+                     <li class="item"><img src="imgs/demo6/timeIcon.png" /></li>
+                     <li class="item2">限时抢购</li>
+                 </ul>
+                 <p class="txt">小邻为您提供实惠优质健康</p>
+             </div>
+
+             <div class="row2">
+
+             </div>
+
+             <div class="row3">
+                 <img src="imgs/demo6/fruitIcon2.png" />
+             </div>
+
+         </aside>
+
+        <aside class="right">
+
+             <div class="Arow">
+                 <ul class="product">
+                     <li class="item">
+                         <ul class="iconLamp">
+                             <li><img src="imgs/demo6/lampIcon.png" /></li>
+                             <li class="txt">仁源果品51大放血</li>
+                         </ul>
+                         <p class="txt2">实惠优质健康找仁源</p>
+                     </li>
+                     <li class="item2">
+                         <img src="imgs/demo6/fruitIcon.png" />
+                     </li>
+                 </ul>
+             </div>
+
+            <div class="Arow2">
+                <div class="Arowlef">
+                    <p class="txt">最新商品</p>
+                    <ul class="txt2">
+                        <li>实惠</li>
+                        <li>优质</li>
+                        <li>健康</li>
+                    </ul>
+                    <p><img src="imgs/demo6/fruitIcon3.png" /></p>
+                </div>
+                <div class="Arowright">
+                    <p class="txt3">每日新品</p>
+                    <ul class="txt4">
+                        <li>实惠</li>
+                        <li>优质</li>
+                        <li>健康</li>
+                    </ul>
+                    <p><img src="imgs/demo6/fruitIcon4.png" /></p>
+                </div>
+            </div>
+        </aside>
+    </section>
+</div>
+
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/vue.2.3.0.js"></script>
+<script src="js/remDeal.js"></script>
+<!--<script src="js/demo2.js"></script>-->
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('#swiper-container6',{
+        effect : 'fade',
+        autoplay: 1000,
+        speed:300,
+        pagination : '.swiper-pagination'
+    })
+</script>
+
+</body>
+</html>

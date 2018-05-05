@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="description" content="不超过150个字符"/>
+    <meta name="keywords" content=""/>
+    <meta content="caibaojian" name="author"/>
+    <title>demo2</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <section id="demo2">
+
+    <header class="demo2_head">
+           <section class="logo">
+               <img src="imgs/demo2/logo.png" />
+           </section>
+    </header>
+
+   <section class="demo2_row">
+       <ul class="mainUser">
+           <li class="title">上级经济人：</li>
+           <li class="name">{{name}}</li>
+       </ul>
+   </section>
+
+    <section class="demo2_row2">
+        <ul class="mainUser">
+            <li class="title">我的下级经纪人：</li>
+            <li class="name">{{num}}</li>
+        </ul>
+    </section>
+
+        <section class="demo2_row3" v-for="item in userAll">
+            <section class="row3_line">
+            <section class="lef">
+                <ul class="lefList">
+                    <li><img :src="'imgs/demo2/'+item.image" /></li>
+                    <li class="txt">{{item.name}}</li>
+                </ul>
+            </section>
+            <section class="right">
+                <ul class="rightList">
+                    <li>客户数：</li>
+                    <li class="numAll">{{item.numAll}}个</li>
+                </ul>
+            </section>
+            </section>
+        </section>
+
+    </section>
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/vue.2.3.0.js"></script>
+<script src="js/remDeal.js"></script>
+<script src="js/demo2.js"></script>
+
+</body>
+</html>
