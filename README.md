@@ -29,7 +29,7 @@ demo7.html
 http://caibaojian.com/simple-flexible.html
 (推荐网上的文章)
 
-把适应js放在项目js文件夹里的remDeal.js（引入此js文件，网页制作px像素单位换算除以100，则px:rem=100:1）
+把自适应js放在项目js文件夹里的remDeal.js（引入此js文件，网页制作px像素单位换算除以100，则px:rem=100:1）
 
 2)里面的demo都是单独和不相联的页面，为了实践移动端rem自适应而做的demo
 
